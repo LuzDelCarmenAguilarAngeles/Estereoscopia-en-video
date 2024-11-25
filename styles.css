@@ -1,0 +1,154 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #140e4f;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fcfed9;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: #fcfed9;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-links li a:hover {
+    background-color: #a4eaf8;
+    border-radius: 5px;
+}
+
+/* Sección de videos */
+.video-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel video {
+    min-width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Botones del carrusel */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Texto dinámico */
+#focus-text {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Contenedor de videos duales */
+.dual-videos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #140e4f;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.video-container {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.video-container h3 {
+    margin-bottom: 10px;
+    color: #fcfed9;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+video {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.small-video {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #140e4f;
+    color: #fcfed9;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
