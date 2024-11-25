@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Videos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">3.3 Estereoscopia en video</a>
+            <ul class="nav-links">
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="home">
+        <!-- Primera Sección -->
+        <section class="video-section" id="videos1">
+            <h2>Personal</h2>
+
+            <!-- Texto dinámico -->
+            <h3 id="focus-text">Foco Cercano</h3>
+
+            <!-- Contenedor del carrusel -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <video autoplay muted loop>
+                        <source src="images/me foco cercano2_1.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                    <video autoplay muted loop>
+                        <source src="images/me foco medio.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                    <video autoplay muted loop>
+                        <source src="images/me foco lejano.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+
+                <!-- Botones de navegación -->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
+            <!-- Contenedor de videos pequeños -->
+            <div class="dual-videos">
+                <div class="video-container">
+                    <h3>Izquierdo</h3>
+                    <video autoplay muted loop class="small-video">
+                        <source src="images/personal izq.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+                <div class="video-container">
+                    <h3>Derecho</h3>
+                    <video autoplay muted loop class="small-video">
+                        <source src="images/personal der.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Segunda Sección -->
+        <section class="video-section" id="videos2">
+            <h2>Elementos en Movimiento</h2>
+
+            <!-- Texto dinámico -->
+            <h3 id="focus-text">Foco Medio</h3>
+
+            <!-- Contenedor del carrusel -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <video autoplay muted loop>
+                        <source src="images/box foco cercano2.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                    <video autoplay muted loop>
+                        <source src="images/box foco medio.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                    <video autoplay muted loop>
+                        <source src="images/box foco lejano.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+
+                <!-- Botones de navegación -->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
+            <!-- Contenedor de videos pequeños -->
+            <div class="dual-videos">
+                <div class="video-container">
+                    <h3>Izquierdo</h3>
+                    <video autoplay muted loop class="small-video">
+                        <source src="images/box izq.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+                <div class="video-container">
+                    <h3>Derecho</h3>
+                    <video autoplay muted loop class="small-video">
+                        <source src="images/box der.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tercera Sección -->
+        <section class="video-section" id="videos3">
+            <h2>Recorrido</h2>
+
+            <!-- Texto dinámico -->
+            <h3 id="focus-text">Foco Lejano</h3>
+
+            <!-- Contenedor del carrusel -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <video autoplay muted loop>
+                        <source src="images/car foco cercano_1.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                    <video autoplay muted loop>
+                        <source src="images/car foco cercano_1.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                    <video autoplay muted loop>
+                        <source src="images/car foco cercano_1.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+
+                <!-- Botones de navegación -->
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+
+            <!-- Contenedor de videos pequeños -->
+            <div class="dual-videos">
+                <div class="video-container">
+                    <h3>Izquierdo</h3>
+                    <video autoplay muted loop class="small-video">
+                        <source src="images/izq kira.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+                <div class="video-container">
+                    <h3>Derecho</h3>
+                    <video autoplay muted loop class="small-video">
+                        <source src="images/der kira.mp4" type="video/mp4">
+                        Tu navegador no soporta este video.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Luz Aguilar. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
